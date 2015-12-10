@@ -1,0 +1,2 @@
+# libft
+libc 42
