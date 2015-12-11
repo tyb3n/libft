@@ -6,7 +6,7 @@
 /*   By: tbenoist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 11:18:34 by tbenoist          #+#    #+#             */
-/*   Updated: 2015/11/28 13:22:37 by tbenoist         ###   ########.fr       */
+/*   Updated: 2015/12/11 08:52:16 by tbenoist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (i < (int)n)
 	{
 		if (((unsigned char*)s)[i] == (unsigned char)c)
-			return ((void*)&s[i]);
+			return ((void*)(s + i));
 		i++;
 	}
 	return (NULL);
