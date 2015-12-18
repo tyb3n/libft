@@ -6,7 +6,7 @@
 /*   By: tbenoist <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/30 09:42:40 by tbenoist          #+#    #+#             */
-/*   Updated: 2015/12/10 14:19:47 by tbenoist         ###   ########.fr       */
+/*   Updated: 2015/12/18 13:55:23 by tbenoist         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,8 +89,7 @@ char			**ft_strsplit(char const *s, char c)
 	int		j;
 
 	i = 0;
-	str = ft_trim(s, c);
-	if ((list = (char**)malloc(sizeof(char*) * ft_countword(str, c))) && str)
+	if ((str = ft_trim(s, c)) && (list = (char**)malloc(sizeof(char*) * ft_countword(str, c))))
 	{
 		if (!(ft_stralloc(str, c, list)))
 			return (NULL);
