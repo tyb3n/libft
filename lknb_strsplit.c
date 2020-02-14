@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-static int		ft_stralloc(char const *s, char c, char **t)
+static int		lknb_stralloc(char const *s, char c, char **t)
 {
 	int		i;
 	int		len;
@@ -29,7 +29,7 @@ static int		ft_stralloc(char const *s, char c, char **t)
 			len++;
 			i++;
 		}
-		if (!(*t = ft_strnew(len)))
+		if (!(*t = lknb_strnew(len)))
 			return (0);
 		while (s[i] == c)
 			i++;
@@ -38,7 +38,7 @@ static int		ft_stralloc(char const *s, char c, char **t)
 	return (1);
 }
 
-static int		ft_countword(char const *s, char c)
+static int		lknb_countword(char const *s, char c)
 {
 	int		i;
 	int		word;
@@ -56,7 +56,7 @@ static int		ft_countword(char const *s, char c)
 	return (word + 1);
 }
 
-static char		*ft_trim(char const *s, char c)
+static char		*lknb_trim(char const *s, char c)
 {
 	char	*trim;
 	int		i;
@@ -74,7 +74,7 @@ static char		*ft_trim(char const *s, char c)
 		j++;
 	while (s[i + j] == c)
 		j--;
-	if (!(trim = ft_strnew(j + 1)))
+	if (!(trim = lknb_strnew(j + 1)))
 		return (NULL);
 	while (k < j + 1)
 	{
@@ -84,7 +84,7 @@ static char		*ft_trim(char const *s, char c)
 	return (trim);
 }
 
-char			**ft_strsplit(char const *s, char c)
+char			**lknb_strsplit(char const *s, char c)
 {
 	char	**list;
 	char	*str;
@@ -92,9 +92,9 @@ char			**ft_strsplit(char const *s, char c)
 	int		j;
 
 	i = 0;
-	if ((str = ft_trim(s, c)) && (list = (char**)malloc(sizeof(char*) * ft_countword(str, c))))
+	if ((str = lknb_trim(s, c)) && (list = (char**)malloc(sizeof(char*) * lknb_countword(str, c))))
 	{
-		if (!(ft_stralloc(str, c, list)))
+		if (!(lknb_stralloc(str, c, list)))
 			return (NULL);
 		while (*str)
 		{

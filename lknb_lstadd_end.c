@@ -15,11 +15,11 @@
 
 #include "libft.h"
 
-void	ft_lstadd_end(t_list **alst, t_list *new)
+void	lknb_lstadd_end(t_list **alst, t_list *new)
 {
 	if (!*alst)
 		*alst = new;
 	else
 		(*alst)->next == NULL ? (*alst)->next = new :
-			ft_lstadd_end(&(*alst)->next, new);
+			lknb_lstadd_end(&(*alst)->next, new);
 }

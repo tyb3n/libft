@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void	lknb_putnbr(int n)
 {
 	long	nbr;
 
@@ -23,9 +23,9 @@ void	ft_putnbr(int n)
 	if (nbr < 0)
 	{
 		nbr *= -1;
-		ft_putchar('-');
+		lknb_putchar('-');
 	}
 	if (nbr > 9)
-		ft_putnbr(nbr / 10);
-	ft_putchar(nbr % 10 + '0');
+		lknb_putnbr(nbr / 10);
+	lknb_putchar(nbr % 10 + '0');
 }

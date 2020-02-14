@@ -15,12 +15,12 @@
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*lknb_strjoin(char const *s1, char const *s2)
 {
 	char	*join;
 	int		i;
 
-	if (!(join = (ft_strnew(ft_strlen(s1) + ft_strlen(s2)))))
+	if (!(join = (lknb_strnew(lknb_strlen(s1) + lknb_strlen(s2)))))
 		return (NULL);
 	i = 0;
 	while (*s1 != '\0')

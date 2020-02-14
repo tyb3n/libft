@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	*lknb_memmove(void *dst, const void *src, size_t len)
 {
 	int		i;
 	char	tmp[len + 1];

@@ -15,11 +15,11 @@
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*lknb_strrchr(const char *s, int c)
 {
 	int		i;
 
-	i = ft_strlen(s);
+	i = lknb_strlen(s);
 	while (i && s[i] != (char)c)
 		i--;
 	if (s[i] == (char)c)

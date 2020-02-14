@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-static int		ft_nbsize(long n)
+static int		lknb_nbsize(long n)
 {
 	int		size;
 
@@ -30,14 +30,14 @@ static int		ft_nbsize(long n)
 	return (size);
 }
 
-static long		ft_getunit(long n, int unit)
+static long		lknb_getunit(long n, int unit)
 {
 	while (unit--)
 		n /= 10;
 	return (n % 10);
 }
 
-char			*ft_itoa(int n)
+char			*lknb_itoa(int n)
 {
 	char	*res;
 	int		i;
@@ -46,7 +46,7 @@ char			*ft_itoa(int n)
 
 	nbr = n;
 	i = 0;
-	j = ft_nbsize(nbr);
+	j = lknb_nbsize(nbr);
 	if ((res = (char*)malloc(sizeof(char) * (j + 1))))
 	{
 		if (nbr < 0)
@@ -57,7 +57,7 @@ char			*ft_itoa(int n)
 		}
 		while (j - i)
 		{
-			res[i] = '0' + ft_getunit(nbr, j - i - 1);
+			res[i] = '0' + lknb_getunit(nbr, j - i - 1);
 			i++;
 		}
 		res[i] = '\0';

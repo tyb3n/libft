@@ -15,14 +15,14 @@
 
 #include "libft.h"
 
-char	*ft_strrev(char *str)
+char	*lknb_strrev(char *str)
 {
 	char	tmp;
 	int		i;
 	size_t	len;
 
 	i = 0;
-	len = ft_strlen(str) - 1;
+	len = lknb_strlen(str) - 1;
 	while (i <= (int)len / 2)
 	{
 		tmp = str[i];

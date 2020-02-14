@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s)
+char	*lknb_strtrim(char const *s)
 {
 	char	*trim;
 	int		i;
@@ -34,7 +34,7 @@ char	*ft_strtrim(char const *s)
 	while ((s[i + j] == ' ' || s[i + j] == '\n'
 				|| s[i + j] == '\t') && s[i + j])
 		j--;
-	if (!(trim = ft_strnew(j + 1)))
+	if (!(trim = lknb_strnew(j + 1)))
 		return (NULL);
 	while (k < j + 1)
 	{

@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-t_list	*ft_lstget(t_list *l, int n)
+t_list	*lknb_lstget(t_list *l, int n)
 {
 	while (n-- && l)
 		l = l->next;

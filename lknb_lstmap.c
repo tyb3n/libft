@@ -15,19 +15,19 @@
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+t_list	*lknb_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
 	t_list	*new;
 	t_list	*start;
 
-	if (!(new = ft_lstnew((f(lst))->content, (f(lst))->content_size)))
+	if (!(new = lknb_lstnew((f(lst))->content, (f(lst))->content_size)))
 		return (NULL);
 	new->content_size = (f(lst))->content_size;
 	start = new;
 	lst = lst->next;
 	while (lst)
 	{
-		if (!(new->next = ft_lstnew((f(lst))->content, (f(lst))->content_size)))
+		if (!(new->next = lknb_lstnew((f(lst))->content, (f(lst))->content_size)))
 			return (NULL);
 		else
 		{

@@ -15,10 +15,10 @@
 
 #include "libft.h"
 
-t_list	*ft_lstrch(t_list *list, void *cont, size_t size)
+t_list	*lknb_lstrch(t_list *list, void *cont, size_t size)
 {
 	if (list == NULL)
 		return (NULL);
-	return (!ft_memcmp(list->content, cont, size)) ? list :
-	ft_lstrch(list->next, cont, size);
+	return (!lknb_memcmp(list->content, cont, size)) ? list :
+	lknb_lstrch(list->next, cont, size);
 }

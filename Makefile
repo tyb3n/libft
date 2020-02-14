@@ -12,22 +12,22 @@
 
 NAME = libft.a
 
-SRC = ft_isalpha.c		ft_memalloc.c	ft_memdel.c		ft_putendl.c	\
-	  ft_putstr_fd.c	ft_strcpy.c		ft_striteri.c	ft_strmapi.c	\
-	  ft_strnew.c	  	ft_strsub.c		ft_isascii.c	ft_memccpy.c	\
-	  ft_memmove.c		ft_putendl_fd.c	ft_strcat.c		ft_strdel.c		\
-	  ft_strjoin.c		ft_strncat.c	ft_strnstr.c	ft_strtrim.c	\
-	  ft_atoi.c			ft_isdigit.c	ft_memchr.c		ft_memset.c		\
-	  ft_putnbr.c		ft_strchr.c		ft_strdup.c		ft_strlcat.c	\
-	  ft_strncmp.c		ft_strrchr.c	ft_tolower.c	ft_bzero.c		\
-	  ft_isprint.c		ft_memcmp.c		ft_putchar.c	ft_putnbr_fd.c	\
-	  ft_strclr.c		ft_strequ.c		ft_strlen.c		ft_strncpy.c	\
-	  ft_strsplit.c		ft_toupper.c	ft_isalnum.c	ft_itoa.c		\
-	  ft_memcpy.c		ft_putchar_fd.c	ft_putstr.c		ft_strcmp.c		\
-	  ft_striter.c		ft_strmap.c		ft_strnequ.c	ft_strstr.c		\
-	  ft_lstnew.c 		ft_lstdel.c		ft_lstdelone.c	ft_lstiter.c	\
-	  ft_lstmap.c 		ft_lstadd.c		ft_pow.c		ft_lstget.c		\
-	  ft_lstadd_end.c	ft_lstrch.c		ft_strrev.c
+SRC = lknb_isalpha.c		lknb_memalloc.c	lknb_memdel.c		lknb_putendl.c	\
+	  lknb_putstr_fd.c	lknb_strcpy.c		lknb_striteri.c	lknb_strmapi.c	\
+	  lknb_strnew.c	  	lknb_strsub.c		lknb_isascii.c	lknb_memccpy.c	\
+	  lknb_memmove.c		lknb_putendl_fd.c	lknb_strcat.c		lknb_strdel.c		\
+	  lknb_strjoin.c		lknb_strncat.c	lknb_strnstr.c	lknb_strtrim.c	\
+	  lknb_atoi.c			lknb_isdigit.c	lknb_memchr.c		lknb_memset.c		\
+	  lknb_putnbr.c		lknb_strchr.c		lknb_strdup.c		lknb_strlcat.c	\
+	  lknb_strncmp.c		lknb_strrchr.c	lknb_tolower.c	lknb_bzero.c		\
+	  lknb_isprint.c		lknb_memcmp.c		lknb_putchar.c	lknb_putnbr_fd.c	\
+	  lknb_strclr.c		lknb_strequ.c		lknb_strlen.c		lknb_strncpy.c	\
+	  lknb_strsplit.c		lknb_toupper.c	lknb_isalnum.c	lknb_itoa.c		\
+	  lknb_memcpy.c		lknb_putchar_fd.c	lknb_putstr.c		lknb_strcmp.c		\
+	  lknb_striter.c		lknb_strmap.c		lknb_strnequ.c	lknb_strstr.c		\
+	  lknb_lstnew.c 		lknb_lstdel.c		lknb_lstdelone.c	lknb_lstiter.c	\
+	  lknb_lstmap.c 		lknb_lstadd.c		lknb_pow.c		lknb_lstget.c		\
+	  lknb_lstadd_end.c	lknb_lstrch.c		lknb_strrev.c
 
 OBJ = $(SRC:.c=.o)
 

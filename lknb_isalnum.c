@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	lknb_isalnum(int c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c)) ? 1 : 0;
+	return (lknb_isalpha(c) || lknb_isdigit(c)) ? 1 : 0;
 }

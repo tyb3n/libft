@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-int		ft_pow(int n, int exp)
+int		lknb_pow(int n, int exp)
 {
 	int res;
 

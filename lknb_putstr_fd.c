@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-void	ft_putstr_fd(char const *s, int fd)
+void	lknb_putstr_fd(char const *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	write(fd, s, lknb_strlen(s));
 }

@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int	lknb_atoi(const char *str)
 {
 	int n;
 	int	s;
@@ -25,14 +25,14 @@ int	ft_atoi(const char *str)
 	while (*str == ' ' || *str == '\n' || *str == '\t' || *str == '\r'
 			|| *str == '\v' || *str == '\f')
 		str++;
-	if (*str == '-' && ft_isdigit(*(str + 1)))
+	if (*str == '-' && lknb_isdigit(*(str + 1)))
 	{
 		s = -1;
 		str++;
 	}
-	else if (*str == '+' && ft_isdigit(*(str + 1)))
+	else if (*str == '+' && lknb_isdigit(*(str + 1)))
 		str++;
-	while (ft_isdigit(*str))
+	while (lknb_isdigit(*str))
 	{
 		n *= 10;
 		n += *str - '0';

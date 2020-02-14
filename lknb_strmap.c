@@ -15,13 +15,13 @@
 
 #include "libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(char))
+char	*lknb_strmap(char const *s, char (*f)(char))
 {
 	char	*res;
 	int		i;
 
 	i = 0;
-	if (!(res = ft_strnew(ft_strlen(s))))
+	if (!(res = lknb_strnew(lknb_strlen(s))))
 		return (NULL);
 	while (s[i] != '\0')
 	{

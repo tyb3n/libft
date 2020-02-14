@@ -15,17 +15,17 @@
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*lknb_strdup(const char *s1)
 {
 	char	*s2;
 	size_t	i;
 	size_t	size;
 
 	i = 0;
-	size = ft_strlen(s1);
-	if (!(s2 = ft_strnew(size)))
+	size = lknb_strlen(s1);
+	if (!(s2 = lknb_strnew(size)))
 		return (NULL);
-	while (i < ft_strlen(s1))
+	while (i < lknb_strlen(s1))
 	{
 		s2[i] = s1[i];
 		i++;

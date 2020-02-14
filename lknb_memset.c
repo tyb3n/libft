@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*lknb_memset(void *b, int c, size_t len)
 {
 	int			i;
 

@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+void	*lknb_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	int		i;
 

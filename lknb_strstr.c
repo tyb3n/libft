@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-char	*ft_strstr(const char *s1, const char *s2)
+char	*lknb_strstr(const char *s1, const char *s2)
 {
 	int		i;
 	int		j;

@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	lknb_strlcat(char *dst, const char *src, size_t size)
 {
 	char		*p1;
 	const char	*p2;
@@ -30,7 +30,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	i = size - dlen;
 	p2 = src;
 	if (!i)
-		return (dlen + ft_strlen(p2));
+		return (dlen + lknb_strlen(p2));
 	while (*p2 != '\0')
 	{
 		if (i != 1)

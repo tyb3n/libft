@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-void	ft_memdel(void **ap)
+void	lknb_memdel(void **ap)
 {
 	free(*ap);
 	*ap = NULL;
